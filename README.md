@@ -1,10 +1,4 @@
-Boa! O `README.md` é a vitrine do seu projeto 🚀
-Mesmo que seja um desafio, já dá pra deixar ele bem apresentável.
-
-Aqui vai uma palinha inicial que você pode colocar no seu `README.md` do **AluraFlix-Backend**:
-
-````markdown
-# 🎬 AluraFlix - Backend
+# AluraFlix - Backend
 
 Este projeto é uma API REST desenvolvida em **Node.js** com **Express** e **MongoDB**, criada como parte do desafio da [Alura](https://www.alura.com.br/).  
 O objetivo é fornecer um backend para a plataforma **AluraFlix**, que hospeda vídeos sobre tecnologia.
@@ -21,8 +15,6 @@ O objetivo é fornecer um backend para a plataforma **AluraFlix**, que hospeda v
 
 ## 📌 Funcionalidades
 - CRUD de vídeos (Criar, Listar, Atualizar e Deletar)
-- Filtro por categoria
-- Busca por título/descrição
 - Paginação de resultados
 
 ---
@@ -44,13 +36,8 @@ O objetivo é fornecer um backend para a plataforma **AluraFlix**, que hospeda v
    ```bash
    npm install
    ```
-4. Crie um arquivo `.env` com as variáveis:
-
-   ```
-   PORT=3000
-   MONGO_URI=sua_string_de_conexao
-   ```
-5. Inicie o servidor:
+   
+4. Inicie o servidor:
 
    ```bash
    npm start
