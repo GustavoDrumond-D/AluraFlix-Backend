@@ -1,1 +1,68 @@
-# AluraFlix-Backend
+Boa! O `README.md` é a vitrine do seu projeto 🚀
+Mesmo que seja um desafio, já dá pra deixar ele bem apresentável.
+
+Aqui vai uma palinha inicial que você pode colocar no seu `README.md` do **AluraFlix-Backend**:
+
+````markdown
+# 🎬 AluraFlix - Backend
+
+Este projeto é uma API REST desenvolvida em **Node.js** com **Express** e **MongoDB**, criada como parte do desafio da [Alura](https://www.alura.com.br/).  
+O objetivo é fornecer um backend para a plataforma **AluraFlix**, que hospeda vídeos sobre tecnologia.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/) (ODM para modelagem de dados)
+
+---
+
+## 📌 Funcionalidades
+- CRUD de vídeos (Criar, Listar, Atualizar e Deletar)
+- Filtro por categoria
+- Busca por título/descrição
+- Paginação de resultados
+
+---
+
+## 🛠 Como Rodar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/GustavoDrumond-D/AluraFlix-Backend.git
+````
+
+2. Entre na pasta do projeto:
+
+   ```bash
+   cd AluraFlix-Backend
+   ```
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+4. Crie um arquivo `.env` com as variáveis:
+
+   ```
+   PORT=3000
+   MONGO_URI=sua_string_de_conexao
+   ```
+5. Inicie o servidor:
+
+   ```bash
+   npm start
+   ```
+
+---
+
+## 📡 Endpoints Principais
+
+* `POST /videos` → Criar vídeo
+* `GET /videos` → Listar vídeos
+* `GET /videos/:id` → Detalhar vídeo
+* `PUT /videos/:id` → Atualizar vídeo
+* `DELETE /videos/:id` → Deletar vídeo
+
