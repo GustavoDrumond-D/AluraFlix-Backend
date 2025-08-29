@@ -27,21 +27,19 @@ O objetivo é fornecer um backend para a plataforma **AluraFlix**, que hospeda v
 ````
 
 2. Entre na pasta do projeto:
-
-   ```bash
+    ```bash
    cd AluraFlix-Backend
-   ```
-3. Instale as dependências:
+````
 
+3. Instale as dependências:
    ```bash
    npm install
-   ```
-   
-4. Inicie o servidor:
+````
 
+4. Inicie o servidor:
    ```bash
    npm start
-   ```
+````
 
 ---
 
