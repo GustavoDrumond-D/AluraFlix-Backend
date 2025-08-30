@@ -5,7 +5,9 @@ async function dbConnect() {
     if (!connectionString) {
         throw new Error("DB_CONNECTION_STRING não definida nas variáveis de ambiente.");
     }
-    await mongoose.connect(connectionString);
+    await mongoose.connect(connectionString, {
+        dbName: "AluraFlixDataBase"
+    });
     console.log("Conectado ao MongoDB");
     return mongoose.connection;
 }
