@@ -1,8 +1,17 @@
 import express from 'express';
-const app = express();
+import dbConnect from "./config/dbConnect.js";
+import routerIndex from './routes/index.js';
 
-app.get('/', (req, res) => {
-    res.status(200).send('Projeto: AluraFlix');
-})
+const conexao =  await dbConnect();
+
+conexao.on('error', (erro) => {
+    console.log("erro na conexao: ", erro)
+});
+conexao.once('open', () => {
+    console.log("conexao aberta com sucesso")
+});
+
+const app = express();
+routerIndex(app);
 
 export default app;
