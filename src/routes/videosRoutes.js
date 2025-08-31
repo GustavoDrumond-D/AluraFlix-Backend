@@ -3,6 +3,8 @@ import videosController from '../controllers/videosController.js';
 
 const router = express.Router();
 
-router.use('/videos', videosController.listarVideos);
+router.get('/videos', videosController.listarVideos);
+
+router.post('/videos', videosController.cadastrarVideo);
 
 export default router;
