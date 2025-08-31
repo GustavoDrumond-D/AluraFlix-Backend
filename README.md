@@ -7,9 +7,9 @@ O objetivo é fornecer um backend para a plataforma **AluraFlix**, que hospeda v
 
 ## 🚀 Tecnologias Utilizadas
 - [Node.js](https://nodejs.org/)
-- [Express](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Mongoose](https://mongoosejs.com/) (ODM para modelagem de dados)
+- [Express](https://expressjs.com/) - v5.1.0
+- [MongoDB](https://www.mongodb.com/) - v6.19.0
+- [Mongoose](https://mongoosejs.com/) - v8.18.0
 
 ---
 
