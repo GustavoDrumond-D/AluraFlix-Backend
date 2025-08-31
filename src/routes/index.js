@@ -6,7 +6,7 @@ const routerIndex = (app) => {
         res.status(200).send({ message: "API AluraFlix" });
     });
 
-    app.use(router);
+    app.use(express.json(), router);
 }
 
 export default routerIndex;
