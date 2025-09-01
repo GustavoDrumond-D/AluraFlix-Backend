@@ -15,6 +15,16 @@ class videosController {
             res.status(500).send({ message: 'Erro ao listar vídeos' });
         }
     }
+
+    static async listarVideosPorId (req, res){
+        try{
+            const id = req.params.id
+            const videoEncontrado = await Video.findById(id)
+            res.status(200).json(videoEncontrado)
+        } catch (error) {
+            res.status(500).send({ message: 'Erro ao listar vídeos por ID' });
+        }
+    }
     
     /*
     Cadastra um novo vídeo
