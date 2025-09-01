@@ -12,5 +12,7 @@ router.get('/videos/:id', videosController.listarVideosPorId)
 router.post('/videos', videosController.cadastrarVideo);
 // Rota para atualizar vídeo
 router.put('/videos/:id', videosController.atualizarVideo);
+// Rota para deletar vídeo
+router.delete('/videos/:id', videosController.deletarVideo);
 
 export default router;
