@@ -60,6 +60,16 @@ class videosController {
             res.status(500).send({ message: 'Erro ao atualizar vídeo' });
         }
     }
+
+    static async deletarVideo(req, res) {
+        try {
+            const id = req.params.id
+            await Video.findByIdAndDelete(id)
+            res.status(200).send({message: 'Vídeo deletado com sucesso'})
+        } catch (error) {
+            res.status(500).send({ message: 'Erro ao deletar vídeo' });
+        }
+    }
 }
 
 export default videosController;
