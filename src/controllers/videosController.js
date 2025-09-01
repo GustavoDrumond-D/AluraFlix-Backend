@@ -45,6 +45,16 @@ class videosController {
             res.status(500).send({ message: 'Erro ao cadastrar vídeo' });
         }
     }
+
+    static async atualizarVideo(req, res) {
+        try {
+            const id = req.params.id
+            await Video.findByIdAndUpdate(id, req.body)
+            res.status(200).send({message: 'Vídeo atualizado com sucesso'})
+        } catch (error) {
+            res.status(500).send({ message: 'Erro ao atualizar vídeo' });
+        }
+    }
 }
 
 export default videosController;
