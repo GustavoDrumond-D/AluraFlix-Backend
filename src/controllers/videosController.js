@@ -46,6 +46,11 @@ class videosController {
         }
     }
 
+    /* Atualiza um vídeo por ID
+    1. Usa o método findByIdAndUpdate do Mongoose para atualizar um documento na coleção de vídeos com o ID fornecido nos parâmetros da requisição (req.params.id) e os novos dados fornecidos no corpo da requisição (req.body).
+    2. Retorna uma mensagem de sucesso com status 200 (OK) se a operação for bem-sucedida.
+    3. Em caso de erro, retorna uma mensagem de erro com status 500 (Erro Interno do Servidor).
+    */
     static async atualizarVideo(req, res) {
         try {
             const id = req.params.id
