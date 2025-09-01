@@ -61,6 +61,11 @@ class videosController {
         }
     }
 
+    /* Deleta um vídeo por ID
+    1. Usa o método findByIdAndDelete do Mongoose para remover um documento na coleção de vídeos com o ID fornecido nos parâmetros da requisição (req.params.id).
+    2. Retorna uma mensagem de sucesso com status 200 (OK) se a operação for bem-sucedida.
+    3. Em caso de erro, retorna uma mensagem de erro com status 500 (Erro Interno do Servidor).
+    */
     static async deletarVideo(req, res) {
         try {
             const id = req.params.id
